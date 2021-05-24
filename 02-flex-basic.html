@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .container {
+        background: pink;
+        display: flex;
+        /* value: start,end,center */
+        /* flex-start가 디폴트 , center주면 중간으로 간다 */
+
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        height: 300px;
+
+        /* align-items: center , flex-end , flex-start */
+        align-items: center;
+    }
+    .item {
+        /* flex 상태에서 item은 유사 block상태가 된다 */
+        width: 100px;
+        height: 100px;
+        background: chocolate;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+    </div>
+</body>
+</html>

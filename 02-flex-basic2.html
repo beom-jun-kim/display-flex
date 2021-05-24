@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title></title>
+<style>
+    .flexbox-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background: pink;
+        /* value: start,end,center */
+        /* flex-start가 디폴트 , center주면 중간으로 간다 */
+
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        height: 300px;
+        width: 600px;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: stretch;
+        /* flex-wrap: wrap-reverse; > 반대로 시작함*/
+        /* flex-wrap: nowrap; > 줄바꿈이 일어나지 않음*/
+        /* align-items: center , flex-end , flex-start */
+        /* align-items: center; */
+    }
+    .item {
+        /* flex 상태에서 item은 유사 block상태가 된다 */
+        width: 100px;
+        /* height: 100px; */
+        background: chocolate;
+        border: 1px solid #000;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+        <div class="item">h</div>
+    </div>
+</body>
+</html>
